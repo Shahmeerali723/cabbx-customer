@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-custom-secondary{
+    @apply bg-gradient-to-r from-secondary-dark to-secondary;
+}
+.bg-gradient-custom-primary{
+    @apply bg-gradient-to-r from-primary-light to-primary;
+}
