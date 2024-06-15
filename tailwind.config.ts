@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -26,8 +29,8 @@ const config = {
         foreground: "hsl(var(--foreground))",
         primary: {
           light :"#E2C529",
-          DEFAULT: "#F69429",
-          dark : "#E2A323D9",
+          DEFAULT: "#E2A323",
+          dark : "#C48F22",
         },
         secondary: {
           DEFAULT: "#5F833B",
@@ -41,6 +44,9 @@ const config = {
         },
         golden :{
           DEFAULT :"#E2C529"
+        },
+        orange :{
+          DEFAULT :"#F69429"
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

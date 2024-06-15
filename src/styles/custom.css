@@ -6,5 +6,5 @@
     @apply bg-gradient-to-r from-secondary-dark to-secondary;
 }
 .bg-gradient-custom-primary{
-    @apply bg-gradient-to-r from-primary-light to-primary;
+    @apply bg-gradient-to-r from-primary-light to-orange;
 }

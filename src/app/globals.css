@@ -66,6 +66,25 @@
       --ring: 212.7 26.8% 83.9%;
     }
   }
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator,input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+  .scrollBar::-webkit-scrollbar{
+    width: 10px;
+  }
+  input[type="datetime-local"]::-webkit-clear-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+  input[type="datetime-local"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+  }
+  input[type="datetime-local"]::-webkit-outer-spin-button {
+    display: none;
+    -webkit-appearance: none;
+  }  
 
   @layer base {
     * {
