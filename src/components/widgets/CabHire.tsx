@@ -28,10 +28,12 @@ const CabHire = () => {
         </div>
       </div>
 
-      <div className="bg-primary bg-opacity-[85%]">
+      <div className="bg-primary bg-opacity-[85%] rounded-lg">
         <div className="h-14 "></div>
-        <VehicleSelector selectedTab={selectedTab} />
-        {selectedTab === "Cab" ? <BookingForm /> : <DayHireForm />}
+        <div className="w-[90%] mx-auto">
+          <VehicleSelector selectedTab={selectedTab} />
+          {selectedTab === "Cab" ? <BookingForm /> : <DayHireForm />}
+        </div>
       </div>
     </div>
   );

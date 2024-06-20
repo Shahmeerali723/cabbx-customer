@@ -1,22 +1,27 @@
-import Link from 'next/link';
-import { Button } from "../ui/button";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const VehicleNavbar = () => {
-  return (
-    <nav className="bg-yellow-50 py-4 flex justify-center">
-      <ul className="flex bg-gray-100 rounded-full shadow-lg">
-        {['Saloon', 'Estate', 'MPV', 'Transporter', 'Executive', 'Executive Transporter'].map((item, index) => (
-          <li key={index} className="list-none">
-            <Link href="/" className={`px-4 py-2 block rounded-full ${item === 'Saloon' ? 'bg-orange-500 text-white mb-4 ml-4' : 'hover:bg-gray-200'}`}>
-             
-                {item}
-              
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
+const VehicleNav = ({ selectedVehicle, setSelectedVehicle }:any) => {
+    const vehicleTypes = ['Saloon', 'Estate', 'MPV', 'Transporter', 'Executive', 'Executive Transporter'];
+
+    return (
+        <nav className="flex justify-between p-2">
+            {vehicleTypes.map((type) => (
+                <button
+                    key={type}
+                    onClick={() => setSelectedVehicle(type)}
+                    className={`px-5 font-plus-jakarta font-semibold  ${selectedVehicle === type ? 'bg-orange relative top-[-30px] py-2  border-[7px] rounded-3xl border-vehicle ' : ' text-gray-800'}`}
+                >
+                    {type}
+                </button>
+            ))}
+        </nav>
+    );
 };
 
-export default VehicleNavbar;
+VehicleNav.propTypes = {
+    selectedVehicle: PropTypes.string.isRequired,
+    setSelectedVehicle: PropTypes.func.isRequired,
+};
+
+export default VehicleNav;

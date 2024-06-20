@@ -8,6 +8,7 @@ import { IoPersonAdd } from "react-icons/io5";
 import { BsLuggageFill } from "react-icons/bs";
 import VehicleSelector from "../shared/VehicleSelecter";
 import { Button } from "../ui/button";
+import NavDropDown from "../shared/NavDropDown";
 
 interface FormData {
   pickUp: string;
@@ -20,17 +21,16 @@ interface FormData {
   journey: string;
 }
 
-
 const BookingForm = () => {
   const [formData, setFormData] = useState<FormData>({
-    pickUp : "",
-    via : "",
-    dropoff : "",
-    date : "",
-    time : "",
-    noOfPerson : "",
-    items : "",
-    journey : "",
+    pickUp: "",
+    via: "",
+    dropoff: "",
+    date: "",
+    time: "",
+    noOfPerson: "",
+    items: "",
+    journey: "",
   });
 
   const handleChange = (
@@ -42,7 +42,6 @@ const BookingForm = () => {
       [name]: value,
     });
     console.log(formData);
-    
   };
   return (
     <div className="p-4">
@@ -123,19 +122,24 @@ const BookingForm = () => {
             />
           </div>
           <div className="mb-4">
-            <InputWithIcon
-              placeholder="Journey"
-              icon={<FaLocationDot />}
-              classes={{ icon: "bg-black text-white", div: "border-black" }}
-
-            />
+            <div className="bg-white bg-opacity-35 p-3 border-[1px] rounded-sm border-black">
+              <NavDropDown
+                data={{
+                  title: "Journey",
+                  runs: [
+                    {name:"Single Journey",},
+                    {name:"Wait & Return Journey",},
+                    {name:"Return Journey",}
+                  ],
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className='flex justify-center items-center'>
-
-      <Button className="bg-black text-white w-fit p-2">Get Quote</Button>
+      <div className="flex justify-center items-center">
+        <Button className="bg-black text-white w-fit p-2 px-10">Get Quote</Button>
       </div>
     </div>
   );

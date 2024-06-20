@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 .bg-gradient-custom-secondary{
-    @apply bg-gradient-to-r from-secondary-dark to-secondary;
+    @apply bg-gradient-to-t from-secondary-dark to-secondary;
 }
 .bg-gradient-custom-primary{
     @apply bg-gradient-to-r from-primary-light to-orange;
 }
+
+
+/* Add this CSS in your global styles or a suitable CSS module */
+.serviceCardScroll::-webkit-scrollbar{
+    height: 10px;
+    width: "80%";
+    background-color: black;
+    border-radius: 100px;
+}
+.serviceCardScroll::-webkit-scrollbar-thumb{
+    background-color: #E2C529;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+
+  

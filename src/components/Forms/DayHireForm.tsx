@@ -1,10 +1,9 @@
-import React, { ChangeEvent, useState } from 'react';
-import InputWithIcon from '../shared/Input-With-Icon';
+import React, { ChangeEvent, useState } from "react";
+import InputWithIcon from "../shared/Input-With-Icon";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdAdd } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
-import { Button } from '../ui/button';
-
+import { Button } from "../ui/button";
 
 interface FormData {
   pickUp: string;
@@ -15,10 +14,10 @@ interface FormData {
 
 const DayHireForm = () => {
   const [formData, setFormData] = useState<FormData>({
-    pickUp : "",
-    days : "",
-    dropoffTimeDate : "",
-    pickUpoffTimeDate : "",
+    pickUp: "",
+    days: "",
+    dropoffTimeDate: "",
+    pickUpoffTimeDate: "",
   });
 
   const handleChange = (
@@ -30,7 +29,6 @@ const DayHireForm = () => {
       [name]: value,
     });
     console.log(formData);
-    
   };
   return (
     <div className="p-4 w-full">
@@ -56,10 +54,9 @@ const DayHireForm = () => {
               onChange={handleChange}
             />
           </div>
-          
-          </div>
-          <div className='grid grid-cols-2 gap-2'>
-            <div className="mb-4">
+        </div>
+        <div className="grid grid-cols-2 gap-2">
+          <div className="mb-4">
             <InputWithIcon
               placeholder="Dropoff Date & Time"
               type={"datetime-local"}
@@ -80,13 +77,10 @@ const DayHireForm = () => {
               onChange={handleChange}
             />
           </div>
-          </div>
-          
-        
+        </div>
       </div>
-      <div className='flex justify-center items-center'>
-
-      <Button className="bg-black text-white w-fit p-2">Get Quote</Button>
+      <div className="flex justify-center items-center">
+        <Button className="bg-black text-white w-fit p-2">Get Quote</Button>
       </div>
     </div>
   );

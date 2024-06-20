@@ -94,3 +94,10 @@
       @apply bg-background text-foreground;
     }
   }
+
+  
+  
+  .grid-cols-railway button {
+    display: inline-block;
+    margin-right: 10px;
+  }

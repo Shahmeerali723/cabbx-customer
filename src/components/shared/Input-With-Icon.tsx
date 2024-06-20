@@ -1,7 +1,15 @@
 // components/ReusableInput.jsx
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
-const InputWithIcon = ({ icon, value, placeholder, onChange, classes, name, type }:any) => {
+const InputWithIcon = ({
+  icon,
+  value,
+  placeholder,
+  onChange,
+  classes,
+  name,
+  type,
+}: any) => {
   const inputRef = useRef<any>(null);
 
   const handleIconClick = () => {
@@ -11,7 +19,12 @@ const InputWithIcon = ({ icon, value, placeholder, onChange, classes, name, type
   };
 
   return (
-    <div className={"flex items-center border-[1px] rounded p-1 bg-[#F3F3F3] bg-opacity-[33%] " + (classes?.div || "")}>
+    <div
+      className={
+        "flex items-center border-[1px] rounded p-1 bg-[#F3F3F3] bg-opacity-[33%] " +
+        (classes?.div || "")
+      }
+    >
       <input
         ref={inputRef}
         type={type || "text"}
@@ -19,7 +32,10 @@ const InputWithIcon = ({ icon, value, placeholder, onChange, classes, name, type
         onChange={onChange}
         placeholder={placeholder}
         name={name}
-        className={"bg-transparent border-none focus:outline-none text-black placeholder-black w-full " + (classes?.input || "")}
+        className={
+          "bg-transparent border-none focus:outline-none text-black placeholder-black w-full " +
+          (classes?.input || "")
+        }
       />
       {icon && (
         <div

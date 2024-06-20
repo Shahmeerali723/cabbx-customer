@@ -73,28 +73,26 @@ const Footer = () => {
                 <Button>Play Store</Button>
               </div>
             </div>
-            
-            <div className="flex flex-col gap-6">
-              <div>
 
-              </div>
+            <div className="flex flex-col gap-6">
+              <div></div>
               <div>
                 <p>
-                Know more about our Privacy Policy - you can easily unsubscribe
-                any time!
-              </p>
-              <div className="relative w-full mt-4">
-                <input
-                  type="text"
-                  className="w-full border border-gray-300 rounded-md py-3 px-4 pr-12 focus:outline-none focus:ring-2 focus:ring-secondary"
-                  placeholder="Enter your email address here"
-                />
-                <Button className="absolute inset-y-0 right-0 flex items-center px-4 mt-1.5 mr-1 bg-secondary text-white rounded-r-md hover:bg-secondary-dark">
-                  Subscribe
-                </Button>
+                  Know more about our Privacy Policy - you can easily
+                  unsubscribe any time!
+                </p>
+                <div className="relative w-full mt-4">
+                  <input
+                    type="text"
+                    className="w-full border border-gray-300 rounded-md py-3 px-4 pr-12 focus:outline-none focus:ring-2 focus:ring-secondary"
+                    placeholder="Enter your email address here"
+                  />
+                  <Button className="absolute inset-y-0 right-0 flex items-center px-4 mt-1.5 mr-1 bg-secondary text-white rounded-r-md hover:bg-secondary-dark">
+                    Subscribe
+                  </Button>
+                </div>
               </div>
-              </div>
-              
+
               <div>
                 <h1>OFFICE</h1>
                 <p className="text-textprimary-dark">

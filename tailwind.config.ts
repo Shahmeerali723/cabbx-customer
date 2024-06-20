@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        'plus-jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+        "plus-jakarta": ['"Plus Jakarta Sans"', "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -28,25 +28,29 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          light :"#E2C529",
+          light: "#E2C529",
           DEFAULT: "#E2A323",
-          dark : "#C48F22",
+          dark: "#C48F22",
         },
         secondary: {
           DEFAULT: "#5F833B",
-          dark : "#253C0E",
-          darkest : "#264902"
+          dark: "#253C0E",
+          darkest: "#264902",
         },
-        textprimary : {
-          DEFAULT : "#FFFFFF",
-          dark :"#CEC7C7",
-          light : "#CACACA"
+        textprimary: {
+          DEFAULT: "#FFFFFF",
+          dark: "#CEC7C7",
+          light: "#CACACA",
         },
-        golden :{
-          DEFAULT :"#E2C529"
+        golden: {
+          DEFAULT: "#E2C529",
+          light : "#E2C529"
         },
-        orange :{
-          DEFAULT :"#F69429"
+        orange: {
+          DEFAULT: "#F69429",
+        },
+        vehicle: {
+          DEFAULT: "#F6F1DD",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -90,7 +94,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],
+} satisfies Config;
 
-export default config
+export default config;
