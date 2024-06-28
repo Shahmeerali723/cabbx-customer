@@ -40,7 +40,7 @@ const Footer = () => {
     { name: "Dispatch", path: "/" },
     { name: "Support", path: "/" },
   ];
-  const icons = [
+  const icons: any = [
     <FaYoutube />,
     <FaFacebookF />,
     <FaTwitter />,
@@ -115,9 +115,9 @@ const Footer = () => {
               <div>
                 <ul>
                   <li className="font-bold text-lg text-white">Useful Links</li>
-                  {useFulLink.map((item) => (
+                  {useFulLink.map((item, index) => (
                     <li key={item.name}>
-                      <Link className="text-sm font-light" href={item.path}>
+                      <Link key={index} className="text-sm font-light" href={item.path}>
                         {item.name}
                       </Link>
                     </li>

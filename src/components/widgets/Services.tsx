@@ -38,7 +38,7 @@ const Services = () => {
           Pickup Service
         </h3>
         <p className="text-sm font-plus-jakarta w-[60%]">
-          Effortless Pickup Service. We'll Take Care of the Rest!
+          {"Effortless Pickup Service. We'll Take Care of the Rest!"}
         </p>
       </div>
       <div className="flex flex-col items-center text-center m-4">
