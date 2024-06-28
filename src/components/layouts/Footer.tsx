@@ -40,14 +40,14 @@ const Footer = () => {
     { name: "Dispatch", path: "/" },
     { name: "Support", path: "/" },
   ];
-  const icons: any = [
-    <FaYoutube />,
-    <FaFacebookF />,
-    <FaTwitter />,
-    <FaInstagram />,
-    <FaLinkedinIn />,
-    <TbWorld />,
-  ];
+  // const icons: any = [
+  //   <FaYoutube />,
+  //   <FaFacebookF />,
+  //   <FaTwitter />,
+  //   <FaInstagram />,
+  //   <FaLinkedinIn />,
+  //   <TbWorld />,
+  // ];
 
   return (
     <div className="w-full text-textprimary font-plus-jakarta">
@@ -184,9 +184,14 @@ const Footer = () => {
             </div>
             <div className="mt-4 md:mt-0 md:ml-auto text-center md:text-right">
               <ul className="flex justify-center md:justify-end gap-4">
-                {icons.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
+                
+                  <li ><FaYoutube /></li>
+                  <li ><FaFacebookF /></li>
+                  <li ><FaTwitter /></li>
+                  <li ><FaInstagram /></li>
+                  <li ><FaLinkedinIn /></li>
+                  <li ><TbWorld /></li>
+               
               </ul>
             </div>
           </div>
