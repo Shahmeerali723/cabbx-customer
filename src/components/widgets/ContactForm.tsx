@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ContactForm = () => {
@@ -15,7 +16,9 @@ const ContactForm = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <img
+          <Image
+          width={100}
+          height={100}
             src="/contact-usrafiki-1@2x.png"
             alt="Contact Us"
             className="w-3/4 h-auto"

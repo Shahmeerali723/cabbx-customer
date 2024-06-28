@@ -1,41 +1,32 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const vehicles: any = {
   Cab: [
-    { name: "Coupe", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "wwwww", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "eeeee", image: "https://static.toiimg.com/photo/80387978.cms" },
+    { name: "Coupe", image: "/image-1@2x.png" },
+    { name: "Cadillac", image: "/image-2@2x.png" },
+    { name: "Nissan", image: "/image-3@2x.png" },
+    { name: "Chevrolet", image: "/image-4@2x.png" },
+    { name: "Dodge", image: "/image-5@2x.png" },
     {
-      name: "Cadiwweellac",
-      image: "https://static.toiimg.com/photo/80387978.cms",
+      name: "badger bus",
+      image: "/image-6@2x.png",
     },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    {
-      name: "Cadwwwwillac",
-      image: "https://static.toiimg.com/photo/80387978.cms",
-    },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "aaaa", image: "https://static.toiimg.com/photo/80387978.cms" },
+    
+    
   ],
   DayHire: [
-    { name: "wwwww", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "eeeee", image: "https://static.toiimg.com/photo/80387978.cms" },
+    { name: "Coupe", image: "/image-1@2x.png" },
+    { name: "Cadillac", image: "/image-2@2x.png" },
+    { name: "Nissan", image: "/image-3@2x.png" },
+    { name: "Chevrolet", image: "/image-4@2x.png" },
+    { name: "Dodge", image: "/image-5@2x.png" },
     {
-      name: "Cadiwweellac",
-      image: "https://static.toiimg.com/photo/80387978.cms",
+      name: "badger bus",
+      image: "/image-6@2x.png",
     },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    {
-      name: "Cadwwwwillac",
-      image: "https://static.toiimg.com/photo/80387978.cms",
-    },
-    { name: "Cadillac", image: "https://static.toiimg.com/photo/80387978.cms" },
-    { name: "aaaa", image: "https://static.toiimg.com/photo/80387978.cms" },
   ],
 };
 
@@ -56,17 +47,19 @@ const VehicleSelector = ({ selectedTab }: any) => {
     <div className="flex space-x-4 overflow-x-scroll p-4 w-full justify-center scrollBar">
       {vehicles[selectedTab].map((vehicle: any, index: any) => (
         <div key={index} className="flex-shrink-0">
-          <img
+          <Image
+          width={100}
+          height={100}
             src={vehicle.image}
             alt={vehicle.name}
-            className={`w-32 h-20 cursor-pointer ${
+            className={`w-44 h-20 cursor-pointer ${
               selectedVehicle?.name === vehicle.name
                 ? "border-4 border-yellow-500"
                 : ""
             }`}
             onClick={() => setSelectedVehicle(vehicle)}
           />
-          <p className="text-center ">{vehicle.name}</p>
+          <p className="text-center font-plus-jakarta font-bold">{vehicle.name}</p>
         </div>
       ))}
     </div>

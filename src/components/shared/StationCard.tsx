@@ -4,7 +4,9 @@ import Image from "next/image";
 const StationCard = ({ station }: any) => {
   return (
     <div className="relative font-plus-jakarta w-full rounded-xl">
-      <img
+      <Image
+      width={100}
+      height={100}
         src={station.image}
         alt={station.name}
         className="w-full h-[700px] rounded-xl"

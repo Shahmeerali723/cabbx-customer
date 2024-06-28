@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { CgBriefcase } from "react-icons/cg";
 import { IoPersonAdd } from "react-icons/io5";
 import { BsLuggageFill } from "react-icons/bs";
+import Image from "next/image";
 
 const vehicleData: any = {
   Saloon: {
@@ -106,10 +107,12 @@ const VehicleDisplay = ({ selectedVehicle, setSelectedVehicle }: any) => {
       </div>
       <div className="relative col-span-2 flex justify-center items-center">
         <div className="relative z-20">
-          <img
+          <Image
+          width={100}
+          height={100}
             src={vehicle.image}
             alt={selectedVehicle}
-            className="mt-4 rounded-lg w-3/4 mx-auto"
+            className="w-[300px]"
           />
           <div
             style={{ zIndex: -1 }}

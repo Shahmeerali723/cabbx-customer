@@ -22,6 +22,7 @@ import ServiceCarousel from "@/components/widgets/ServiceCarousel";
 import CoachTravelWidget from "@/components/widgets/CoachTravelWidget";
 import AirportServices from "@/components/widgets/AirportServices";
 import ContactForm from "@/components/widgets/ContactForm";
+import CarCard from "@/components/shared/CarCard";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
           <StationSection />
           <AirportServices/>
           <ContactForm/>
+          <CarCard/>
         </div>
       </div>
       <Footer />

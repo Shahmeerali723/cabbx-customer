@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -21,22 +22,30 @@ const AboutUs = () => {
       </div>
       <div className="flex w-full justify-end gap-2 p-5">
         
-          <img
+          <Image
+          width={100}
+          height={100}
             className="rounded-4xs  h-52 "
             alt=""
             src="/rectangle-135@2x.png"
           />
-          <img
+          <Image
+          width={100}
+          height={100}
             className="rounded-4xs mt-5 h-52 "
             alt=""
             src="/rectangle-137@2x.png"
           />
-          <img
+          <Image
+          width={100}
+          height={100}
             className="rounded-4xs  h-52 "
             alt=""
             src="/rectangle-136@2x.png"
           />
-          <img
+          <Image
+          width={100}
+          height={100}
             className="rounded-4xs mt-5 w h-52 "
             alt=""
             src="/rectangle-138@2x.png"
