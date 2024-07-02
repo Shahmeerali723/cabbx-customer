@@ -46,7 +46,7 @@ const BookingForm = () => {
   return (
     <div className="p-4">
       <div className="">
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid  md:grid-cols-3 gap-2">
           <div className="mb-4">
             <InputWithIcon
               placeholder="Pickup"
@@ -78,7 +78,7 @@ const BookingForm = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-6 gap-2">
+        <div className="grid  md:grid-cols-6 gap-2">
           <div className="mb-4">
             <InputWithIcon
               placeholder="dd/mm/yy"
@@ -90,7 +90,7 @@ const BookingForm = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="mb-4 col-span-2">
+          <div className="mb-4 md:col-span-2">
             <InputWithIcon
               placeholder="00:00PM"
               type={"time"}

@@ -8,6 +8,9 @@
 .bg-gradient-custom-primary{
     @apply bg-gradient-to-r from-primary-light to-orange;
 }
+.bg-gradient-golden-secondary{
+    @apply bg-gradient-to-r from-golden-light to-secondary;
+}
 
 
 /* Add this CSS in your global styles or a suitable CSS module */

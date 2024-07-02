@@ -5,7 +5,7 @@ const StationCard = ({ station }: any) => {
   return (
     <div className="relative font-plus-jakarta w-full rounded-xl">
       <Image
-      width={100}
+      width={300}
       height={100}
         src={station.image}
         alt={station.name}

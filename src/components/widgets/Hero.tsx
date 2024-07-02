@@ -6,14 +6,14 @@ import { Button } from "../ui/button";
 const Hero = () => {
   return (
     <div className="relative w-full">
-      <Image src={HeroBack} className="w-full" alt="Hero Background" />
+      <Image height={300} src={"/mainpage3.gif"} width={100} className="w-full " alt="Hero Background" />
       <div className="absolute inset-y-0 left-0 flex items-center   ml-8">
-        <div className="text-left w-[50%] flex flex-col gap-3">
-          <h1 className="text-5xl bg-gradient-custom-primary inline-block text-transparent bg-clip-text font-plus-jakarta font-extrabold">
+        <div className="text-left w-[90%] md:w-[60%] flex flex-col gap-3">
+          <h1 className="text-2xl md:text-5xl bg-gradient-custom-primary inline-block text-transparent bg-clip-text font-plus-jakarta font-extrabold">
             CLICK ONCE <br />
             AND YOU’RE ON YOUR WAY
           </h1>
-          <p className="text-textprimary-light font-plus-jakarta">
+          <p className=" text-sm sm:text-md text-textprimary-light font-plus-jakarta">
             Welcome to Cabbx, your trusted companion in navigating the bustling
             streets of the UK. With just a click, embark on seamless journeys
             that redefine convenience and comfort.

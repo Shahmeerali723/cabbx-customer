@@ -3,8 +3,8 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className=" bg-[#EDEDED]  rounded-lg shadow-md flex font-plus-jakarta">
-      <div className="w-1/2 flex flex-col justify-between bg-gradient-custom-secondary text-white rounded-l-lg">
+    <div className=" bg-[#EDEDED]  rounded-lg shadow-md grid md:grid-cols-2 font-plus-jakarta ">
+      <div className="w-full flex flex-col justify-between bg-gradient-custom-secondary text-white rounded-l-lg">
         <div className="flex justify-center items-center">
           <div className="p-14 mb-5">
             <h2 className="text-4xl font-bold">Contact Us</h2>
@@ -17,15 +17,15 @@ const ContactForm = () => {
 
         <div className="flex justify-center items-center">
           <Image
-          width={100}
+          width={450}
           height={100}
             src="/contact-usrafiki-1@2x.png"
             alt="Contact Us"
-            className="w-3/4 h-auto"
+            
           />
         </div>
       </div>
-      <div className="w-1/2 p-8">
+      <div className="w-full p-8">
         <form>
           <div className="mb-4 ">
             <label htmlFor="fullName" className="block  font-bold">

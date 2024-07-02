@@ -53,7 +53,7 @@ const Testimonials = () => {
   return (
     <div className="mt-8 font-plus-jakarta">
       <h2 className="text-center text-3xl font-bold mb-8">Testimonials</h2>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid md:grid-cols-2 gap-2">
         {testimonials.map((testimonial, index) => (
           <Card
             key={index}

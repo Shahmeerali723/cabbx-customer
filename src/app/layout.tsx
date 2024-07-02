@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/layouts/Footer";
+import Navbar from "@/components/layouts/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +21,19 @@ export default function RootLayout({
       <head>
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar/>
+        <hr />
+        
+        {children}
+
+        <footer>
+        <Footer/>
+
+        </footer>
+      </body>
+      
+    
     </html>
   );
 }

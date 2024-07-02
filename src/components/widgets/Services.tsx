@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="flex justify-around bg-secondary p-6 rounded-lg text-white">
+    <div className="grid grid-cols-2 md:grid-cols-4 justify-around bg-secondary p-6 rounded-lg text-white">
       <div className="flex flex-col items-center text-center m-4">
         <div className="text-4xl mb-2">
           <Image src={coinSvg} alt="" />

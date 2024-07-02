@@ -11,6 +11,7 @@ import { FaCar } from "react-icons/fa";
 import { FaRoad } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const data = {
@@ -78,14 +79,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="">
+    <div className="container">
       <div className="flex justify-between items-center p-3">
         <div>
           <Image src={'/layer-2-1@2x.png'} alt="" width={128} height={20} />
         </div>
         <div>
-          <ul className="flex items-center gap-6">
-            <li>Home</li>
+          <div className="hidden lg:block">
+            <ul className="flex items-center gap-6">
+            <li><Link href={"/"}> Home</Link></li>
             <li>
               <NavDropDown data={data.airportRuns} />
             </li>
@@ -100,8 +102,10 @@ const Navbar = () => {
             </li>
             <li>Cover Areas</li>
             <li>Blog</li>
-            <Button className="bg-orange text-white">Signup</Button>
+            <Button className="bg-orange text-white"><Link href={"/signup"}>Signup</Link></Button>
           </ul>
+          </div>
+          
         </div>
       </div>
     </div>

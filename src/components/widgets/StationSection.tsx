@@ -159,7 +159,7 @@ export default function StationSection() {
                       src={station.image}
                       alt={station.name}
                       className="w-full h-full object-cover rounded-xl"
-                      width={128}
+                      width={428}
                       height={80}
                     />
                     <span className="absolute bottom-5 left-0 text-center w-full text-white font-semibold">{station.name}</span>
@@ -185,7 +185,7 @@ export default function StationSection() {
                       src={station.image}
                       alt={station.name}
                       className="w-full rounded-xl h-32  object-cover"
-                      width={128}
+                      width={428}
                       height={80}
                     />
                    

@@ -33,7 +33,7 @@ const DayHireForm = () => {
   return (
     <div className="p-4 w-full">
       <div className="">
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-2">
           <div className="mb-4">
             <InputWithIcon
               placeholder="Pickup"
@@ -55,7 +55,7 @@ const DayHireForm = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid md:grid-cols-2 gap-2">
           <div className="mb-4">
             <InputWithIcon
               placeholder="Dropoff Date & Time"

@@ -108,11 +108,11 @@ const VehicleDisplay = ({ selectedVehicle, setSelectedVehicle }: any) => {
       <div className="relative col-span-2 flex justify-center items-center">
         <div className="relative z-20">
           <Image
-          width={100}
+          width={400}
           height={100}
             src={vehicle.image}
             alt={selectedVehicle}
-            className="w-[300px]"
+            
           />
           <div
             style={{ zIndex: -1 }}
@@ -126,7 +126,7 @@ const VehicleDisplay = ({ selectedVehicle, setSelectedVehicle }: any) => {
           onClick={() => setSelectedVehicle(nextVehicle)}
         /> */}
       </div>
-      <div className="flex justify-around items-center mt-4 flex-col gap-3 font-bold">
+      <div className="grid justify-around items-center mt-4 grid-flow-col lg:grid-flow-row gap-3 font-bold">
         <div className="flex flex-col bg-white items-center text-golden border-2 w-[120px] h-[120px] justify-center border-t-golden border-r-golden  p-2  rounded-full">
           <IoPersonAdd size={30} />
 

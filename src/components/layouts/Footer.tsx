@@ -6,6 +6,7 @@ import UKFlag from "@/assets/UKFlag.svg";
 import USFlag from "@/assets/USFlag.svg";
 import UAEFlag from "@/assets/UAEFlag.svg";
 import AusFlag from "@/assets/AusFlag.svg";
+
 import {
   FaYoutube,
   FaFacebookF,
@@ -57,7 +58,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-4">
             <div className="flex flex-col gap-8">
               <div className="bg-secondary-darkest w-[140px] h-[40px] flex justify-center items-center rounded-lg">
-                <Image src={logo} alt="logo" width={100} height={100} />
+                <Image src={"/layer-2-copy-1@2x.png"} alt="logo" width={100} height={100} />
               </div>
               <p className="font-plus-jakarta">
                 Cabbx is a reliable cab facilitator that has partnered with
@@ -68,9 +69,8 @@ const Footer = () => {
                 transportation needs, saving time and money for businesses.
               </p>
               <p>Working Hours: Mon - Sun 24h</p>
-              <div className="flex gap-4">
-                <Button>AppStore</Button>
-                <Button>Play Store</Button>
+              <div className="">
+                <Image src={"/layer-12-1@2x.png"}  alt="" width={200} height={100}/>
               </div>
             </div>
 
@@ -92,17 +92,23 @@ const Footer = () => {
                   </Button>
                 </div>
               </div>
-
-              <div>
-                <h1>OFFICE</h1>
-                <p className="text-textprimary-dark">
-                  82 Harrow Dene Road, Wembley, Middlesex, London. HA0 2JF,
-                  United Kingdom
-                </p>
+              <div className="flex gap-2 items-start">
+                <Image src={"/buildings1.svg"} alt="" width={100} height={100} className="w-8" />
+                <div>
+                  <h1 className="font-bold">OFFICE</h1>
+                  <p className="text-textprimary-dark">
+                    82 Harrow Dene Road, Wembley, Middlesex, London. HA0 2JF,
+                    United Kingdom
+                  </p>
+                </div>
               </div>
-              <div>
-                <h1>Phone number</h1>
-                <p className="text-textprimary-dark">+44 3300 4331 85</p>
+
+              <div className="flex gap-2 items-start">
+                <Image src={"/vuesaxbulkcall.svg"} alt="" width={100} height={100} className="w-6" />
+                <div>
+                  <h1 className="font-bold">Phone number</h1>
+                  <p className="text-textprimary-dark">+44 3300 4331 85</p>
+                </div>
               </div>
               <div>
                 <Image src={creditCard} alt="" />
@@ -184,14 +190,14 @@ const Footer = () => {
             </div>
             <div className="mt-4 md:mt-0 md:ml-auto text-center md:text-right">
               <ul className="flex justify-center md:justify-end gap-4">
-                
-                  <li ><FaYoutube /></li>
-                  <li ><FaFacebookF /></li>
-                  <li ><FaTwitter /></li>
-                  <li ><FaInstagram /></li>
-                  <li ><FaLinkedinIn /></li>
-                  <li ><TbWorld /></li>
-               
+
+                <li ><FaYoutube /></li>
+                <li ><FaFacebookF /></li>
+                <li ><FaTwitter /></li>
+                <li ><FaInstagram /></li>
+                <li ><FaLinkedinIn /></li>
+                <li ><TbWorld /></li>
+
               </ul>
             </div>
           </div>

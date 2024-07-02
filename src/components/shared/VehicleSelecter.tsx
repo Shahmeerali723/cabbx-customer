@@ -48,11 +48,11 @@ const VehicleSelector = ({ selectedTab }: any) => {
       {vehicles[selectedTab].map((vehicle: any, index: any) => (
         <div key={index} className="flex-shrink-0">
           <Image
-          width={100}
+          width={160}
           height={100}
             src={vehicle.image}
             alt={vehicle.name}
-            className={`w-44 h-20 cursor-pointer ${
+            className={` cursor-pointer ${
               selectedVehicle?.name === vehicle.name
                 ? "border-4 border-yellow-500"
                 : ""

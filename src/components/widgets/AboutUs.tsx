@@ -20,38 +20,41 @@ const AboutUs = () => {
         </p>
         <Link className="font-bold text-orange" href={"/about"}>Read more --- </Link>
       </div>
-      <div className="flex w-full justify-end gap-2 p-5">
-        
+      <div className=" w-full  p-5 hidden md:block">
+        <div className="flex justify-end gap-2">
           <Image
-          width={100}
-          height={100}
+            width={100}
+            height={100}
             className="rounded-4xs  h-52 "
             alt=""
             src="/rectangle-135@2x.png"
           />
           <Image
-          width={100}
-          height={100}
+            width={100}
+            height={100}
             className="rounded-4xs mt-5 h-52 "
             alt=""
             src="/rectangle-137@2x.png"
           />
           <Image
-          width={100}
-          height={100}
+            width={100}
+            height={100}
             className="rounded-4xs  h-52 "
             alt=""
             src="/rectangle-136@2x.png"
           />
           <Image
-          width={100}
-          height={100}
+            width={100}
+            height={100}
             className="rounded-4xs mt-5 w h-52 "
             alt=""
             src="/rectangle-138@2x.png"
           />
         </div>
-     
+
+
+      </div>
+
     </div>
   );
 };
